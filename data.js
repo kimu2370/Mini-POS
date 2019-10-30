@@ -1,0 +1,21 @@
+var menu = [
+    {id : "Aid", name : "자몽", price : "3800"},
+    {id : "Aid", name : "청포도", price : "3800"},
+    {id : "Aid", name : "레몬", price : "3800"},
+    {id : "Aid", name : "수박", price : "3800"},
+    {id : "TEA", name : "복숭아", price : "2800"},
+    {id : "TEA", name : "레몬", price : "2800"},
+    {id : "TEA", name : "녹차", price : "2800"},
+    {id : "TEA", name : "홍차", price : "2800"},
+    {id : "TEA", name : "캐모마일", price : "2800"},
+    {id : "TEA", name : "얼그레이", price : "2800"},
+    {id : "TEA", name : "페퍼민트", price : "2800"},
+    {id : "HOT_coffee", name : "아메리카노", price : "2800"},
+    {id : "HOT_coffee", name : "카페라떼", price : "3200"},
+    {id : "HOT_coffee", name : "카페모카", price : "3500"},
+    {id : "HOT_coffee", name : "카푸치노", price : "3200"},
+    {id : "ICED_coffee", name : "아메리카노", price : "2800"},
+    {id : "ICED_coffee", name : "카페라떼", price : "3200"},
+    {id : "ICED_coffee", name : "카페모카", price : "3500"},
+    {id : "ICED_coffee", name : "카푸치노", price : "3200"}
+];
