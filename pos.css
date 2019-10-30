@@ -56,11 +56,11 @@ button {
   border: 1px dotted black;
   height: 75%;
 }
-#payment {
+#payment-btn {
   border: 1px dotted black;
   height: 25%;
 }
-#payment > button {
+#payment-btn > button {
   width: 150px;
   height: 100px;
 }

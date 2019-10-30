@@ -23,7 +23,7 @@
                 </table>
             </div>
             <div id="calculate">
-                <div class="cal">총 수량 : <span id="total-volume">0</span></div>
+                <div class="cal">총 수량 : <span id="total-quantity">0</span></div>
                 <div class="cal">주문 금액 : <span id="total-cost">0</span></div>
                 <div class="cal">청구 금액 : <span id="pay">0</span></div>
                 <div class="cal">남은 금액 : <span id="cur-pay">0</span></div>
@@ -31,16 +31,18 @@
         </div>
         <div id="show-input">
             <!-- button category 템플릿-->
-            <div id="input">
+            <div id="category-btn">
                 <button class="category-item">Aid</button>
                 <button class="category-item">TEA</button>
                 <button class="category-item">HOT coffee</button>
                 <button class="category-item">ICED coffee</button>
-                <!-- button menu 템플릿 -->
+            </div>
+            <!-- button menu 템플릿 -->
+            <div id="menu-btn">
                 <button class="menu-item"><div class="menu-name"><!-- 아메리카노 -->아메리카노</div><div class="menu-price"><!-- 2,800 -->2,800</div></button>
                 <button class="menu-item"><div class="menu-name"><!-- 아메리카노 -->카페라떼</div><div class="menu-price"><!-- 2,800 -->3,300</div></button>
             </div>
-            <div id="payment">
+            <div id="payment-btn">
                 <button class="payment-item">현금 결제</button>
                 <button class="payment-item">카드 결제</button>
                 <button class="payment-item">복합 결제</button>
@@ -51,7 +53,7 @@
         <tr class="order-menu">
             <td class="num"><!-- 1 --></td>
             <td class="menu"><!-- 아메리카노 --><span class="time"><!-- (21:03) --></span></td>
-            <td class="volume"><!-- 1 --></td>
+            <td class="quantity"><!-- 1 --></td>
             <td class="price"><!-- 2,800 --></td>
         </tr>
     </template>
