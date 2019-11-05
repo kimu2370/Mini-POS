@@ -20,14 +20,7 @@
                         <th>수량</th>
                         <th>가격</th>
                     </tr>
-                <template id=order-template>
-                    <tr class="order-menu">
-                            <td class="num"><!-- 1 --> </td>
-                            <td class="menu">아메리카노 <span class="time"><!-- (21:03) --></span></td>
-                            <td class="quantity"><button class="plus"><!-- + --></button><input class="q-value" type="text"value="1"><button class="minus"><!-- - --></button></td>
-                            <td class="price"><!-- 2,800 --></td>
-                    </tr>
-                </template>
+                <!-- order-template -->
                 </table>
             </div>
             <div id="calculate">
@@ -46,9 +39,7 @@
             </div>
             
             <div id="menu-item">
-                <template id="menu-template">
-                    <button><div class="menu-name"><!-- 아메리카노 --></div><div class="menu-price"><!-- 2,800 --></div></button>
-                </template>
+                <!-- menu-template -->
             </div>
             <div id="payment-item">
                 <button class="payment-btn">현금 결제</button>
@@ -57,6 +48,17 @@
             </div>
         </div>
     </div>
+    <template id=order-template>
+        <tr class="order-menu">
+                <td class="num"><!-- 1 --> </td>
+                <td class="menu"><!-- 아메리카노 --> <span class="time"><!-- (21:03) --></span></td>
+                <td class="quantity"><button class="plus">+</button><input class="q-value" type="text"value="1"><button class="minus">-</button></td>
+                <td class="price"><!-- 2,800 --></td>
+        </tr>
+    </template>
+    <template id="menu-template">
+        <button class="menu-btn"><div class="menu-name"><!-- 아메리카노 --></div><div class="menu-price"><!-- 2,800 --></div></button>
+    </template>
     <script src="pos.js"></script>
 </body>
 </html>

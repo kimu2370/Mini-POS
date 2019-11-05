@@ -14,9 +14,9 @@ var DATA = [
     {id : "HOT coffee", name : "카페라떼", price : "3,200"},
     {id : "HOT coffee", name : "카페모카", price : "3,500"},
     {id : "HOT coffee", name : "카푸치노", price : "3,200"},
-    {id : "ICED coffee", name : "아메리카노", price : "2,800"},
-    {id : "ICED coffee", name : "카페라떼", price : "3,200"},
-    {id : "ICED coffee", name : "카페모카", price : "3,500"},
-    {id : "ICED coffee", name : "카푸치노", price : "3,200"},
+    {id : "ICED coffee", name : "(ICE)아메리카노", price : "2,800"},
+    {id : "ICED coffee", name : "(ICE)카페라떼", price : "3,200"},
+    {id : "ICED coffee", name : "(ICE)카페모카", price : "3,500"},
+    {id : "ICED coffee", name : "(ICE)카푸치노", price : "3,200"},
 ];
 var cart = [];
