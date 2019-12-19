@@ -1,64 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="pos.css" />
-    <script src="data.js"></script>
-    <title>Mini POS기</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="pos.css">
+   <script src="data.js"></script>
+   <title>미니 포스기(Laptop)</title>
 </head>
+<!-- 참고 디자인 url -->
+<!-- https://dribbble.com/shots/3715370-BAK-POS-system-App-redesign -->
 <body>
-    <div id="container">
-        <div id="show-output">
-            <div id="show-table">
-                <table id="table">
-                    <tr>
-                        <th>순번</th>
-                        <th>메뉴</th>
-                        <th>수량</th>
-                        <th>가격</th>
-                    </tr>
-                <!-- order-template -->
-                </table>
-            </div>
-            <div id="calculate">
-                <div>총 수량 : <span id="total-quantity">0</span></div>
-                <div>주문 금액 : <span id="total-cost">0</span></div>
-                <div>청구 금액 : <span id="pay">0</span></div>
-                <div>남은 금액 : <span id="cur-pay">0</span></div>
-            </div>
-        </div>
-        <div id="show-input">
-            <div id="category-item">
-                <button class="category-btn">Aid</button>
-                <button class="category-btn">TEA</button>
-                <button class="category-btn">HOT coffee</button>
-                <button class="category-btn">ICED coffee</button>
-            </div>
-            
-            <div id="menu-item">
-                <!-- menu-template -->
-            </div>
-            <div id="payment-item">
-                <button class="payment-btn">현금 결제</button>
-                <button class="payment-btn">카드 결제</button>
-                <button class="payment-btn">복합 결제</button>
-            </div>
-        </div>
-    </div>
-    <template id=order-template>
-        <tr class="order-menu">
-                <td class="num"><!-- 1 --> </td>
-                <td class="menu"><!-- 아메리카노 --> <span class="time"><!-- (21:03) --></span></td>
-                <td class="quantity"><button class="plus">+</button><input class="q-value" type="text"value="1"><button class="minus">-</button></td>
-                <td class="price"><!-- 2,800 --></td>
-        </tr>
-    </template>
-    <template id="menu-template">
-        <button class="menu-btn"><div class="menu-name"><!-- 아메리카노 --></div><div class="menu-price"><!-- 2,800 --></div></button>
-    </template>
-    <script src="pos.js"></script>
+   <div id="orderContainer">
+      <div id="order">
+         <!-- span 로 컬럼의 제목을 만든다. -->
+         <div id="orderTitle">
+            <span>번호</span>
+            <span>이름</span>
+            <span>가격</span>
+            <span>수량</span>
+         </div>
+         <!-- 주문 내용 -->
+         <div id="orderContent"></div>
+         <!-- 총 주문 수량 && 총 합계 금액 넣는다. -->
+         <div id="orderTotal">
+            <span>총 금액<p>0</p></span>
+            <span>총 수량<p>0</p></span>
+         </div>
+      </div>
+      <div id="calculator">
+         calculator
+         <!-- Advenced 버튼을 클릭하면 계산기 화면에 출력 -->
+      </div>
+   </div>
+   <div id="menuContainer">
+      <div id="menu">
+         <div id="menuCategory">
+            <button class="coffee">커피</button>  
+            <button class="bread">브레드</button> 
+            <button class="pasta">파스타</button>  
+            <button class="alcol">주류</button>  
+         </div>
+         <div id="menuItems">
+            <!-- flexBox를 이용하여 1행 4열씩 나열한다. -->
+         </div>
+      </div>
+      <div id="payment">
+         <!-- Advenced -->
+         <button>현금결제</button><button>카드결제</button>
+      </div>
+   </div>
+   <script src="pos.js"></script>
 </body>
 </html>

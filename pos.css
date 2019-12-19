@@ -1,79 +1,124 @@
-#container{
-  box-sizing: border-box;
-  margin: 3.5%;
+#payment > button {
+   width: 180px;
+   height: 70px;
 }
-#show-output {
-  float: left;
-  position: relative;
-  width: 30%;
-  height: 590px;
+
+#menuItems > button {
+   width: 180px;
+   height: 70px;
 }
-#show-table {  
-  width: 100%;
-  height: 80%;
-  border: 1px dotted black;
+
+#menuItems {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: 60px;
 }
-th, td {
-  width: 300px;
-  padding: 10px;
-  font-weight: bold;
-  text-align: center;
-  border-bottom: 2px solid black;
+
+#menuCategory > button {
+   width: 100px;
+   height: 40px;
 }
-.order-menu:hover {
-  background-color:#f5f5f5;
-  cursor: pointer;
+
+/* 카테고리 색깔 */
+.alcol{background-color: #E8F0F7;}
+.pasta{background-color: #F0DBA3;}
+.bread{background-color: #FFBF00}
+.coffee{background-color: #C46210;}
+
+#payment > button {
+   float: right;
+   margin: 30px 20px 30px 10px;
+   font-size: 20px;
+   background-color: salmon;
 }
-#calculate {
-  font-size: 22px;
-  width: 100%;
-  height: 20%;
-  border: 1px dotted black;
+
+#menuCategory > button,#menuItems > button {
+   margin: 10px 30px 10px 30px;
+   font-size: 20px;
+   color: black;
+   border-radius: 40px;
 }
-#calculate div{
-  padding: 3px;
+
+#menuCategory {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 10px;
+   margin-bottom: 20px;
 }
-#show-input {
-  float: right;
-  position: relative;
-  border: 1px dotted black;
-  width: 63%;
-  height: 550px;
-  padding: 20px;
+
+#payment>button:hover,
+#menuCategory>button:hover,
+#menuItems>button:hover {
+   background-color: royalblue;
 }
-#category-item {
-  border: 1px dotted black;
-  height: 20%;
+
+button {
+   outline: 0; /* 버튼 바깥 표시 지우기 */
+   border: 0;  /* 버튼 바깥 표시 지우기 */
+   cursor: pointer;
 }
-.category-btn {
-  background-color: brown;
-  margin: 10px;
-  width: 200px;
-  height: 100px;
+
+#orderTotal > span {
+   margin-top: 10px;
+   flex-basis: 150px;
 }
-#menu-item {
-  border: 1px dotted black;
-  height: 60%;
+
+#orderTotal {
+   display: flex;
+   flex-direction: row-reverse;
+   height: 130px;
 }
-#menu-item button {
-  background-color: burlywood;
-  margin: 10px;
-  width: 200px;
-  height: 100px;
+#orderContent>div {
+   display: flex;
+   justify-content: space-around;
 }
-#payment-item{
-  text-align: center;
-  border: 1px dotted black;
-  height: 20%;
+#orderContent {
+   overflow: scroll;
+   display: flex;
+   flex-direction: column;
+   height: 320px;
 }
-.payment-btn {
-  margin: 10px;
-  width: 200px;
-  height: 100px;
+
+#orderTitle {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 10px;
 }
-.q-value {
-  margin-left: 5px;
-  margin-right: 5px;
-  text-align: center;
-  width: 30px;
+
+#payment {height: 150px;}
+
+#menu {height: 450px;}
+
+#calculator {height: 150px;}
+
+#order{height: 450px;}
+
+#menuContainer {
+   /* margin : top right bottom left */
+   margin: 35px 30px 20px 0px;
+   width: 57%;
+   float : right;
+}
+
+#orderContainer {
+   /* margin : top right bottom left */
+   margin: 35px 0px 20px 30px;
+   width: 37%;
+   float : left;
+}
+
+body>div > *{border: 5px solid slategray;}
+
+#orderContainer,#menuContainer{border: 5px solid violet;}
+
+body {
+   font-family: "Courier New", Courier, monospace;
+   font-weight: bold;
+   font-size: 20px;
+   text-align: center;
+   box-sizing : border-box;
+   border: 3px solid red;
+   margin: 0;
+   padding: 0;
+   min-height: 100vh;
 }
