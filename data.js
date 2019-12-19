@@ -18,6 +18,17 @@ let DATA = [
     {id : "bread", name : "마늘 바게뜨", price : 3500},
     {id : "bread", name : "야채고로케", price : 1500},
     {id : "bread", name : "고기고로케", price : 2000},
-    {id : "bread", name : "크로아상", price : 3000}
+    {id : "bread", name : "크로아상", price : 3000},
+    {id : "pasta", name : "로제", price : 10900},
+    {id : "pasta", name : "까르보나라", price : 9900},
+    {id : "pasta", name : "봉골레", price : 8900},
+    {id : "pasta", name : "알리오 올리오", price : 8900},
+    {id : "pasta", name : "해산물 토마토", price : 8900},
+    {id : "alcol", name : "아사히", price : 5900},
+    {id : "alcol", name : "하이네켄", price : 5900},
+    {id : "alcol", name : "호가든", price : 5900},
+    {id : "alcol", name : "버드와이저", price : 5900},
+    {id : "alcol", name : "칭따오", price : 5900},
+    {id : "alcol", name : "생맥주", price : 5000}
 ];
 let cart = [];
