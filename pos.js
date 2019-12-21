@@ -91,8 +91,8 @@ function sumPriceFn(info){
 function orderTotalLenderFn(){
    let totalQuantity = cart.map(x=>x.quantity).reduce((acc,cur)=>(acc+cur));
    let totalPrice = cart.map(x=>x.sumPrice).reduce((acc,cur)=>acc+cur);
-   orderTotalArea.querySelectorAll('p')[0].textContent = totalPrice;
-   orderTotalArea.querySelectorAll('p')[1].textContent = totalQuantity;
+   orderTotalArea.querySelectorAll('p')[0].textContent = totalPrice+"원";
+   orderTotalArea.querySelectorAll('p')[1].textContent = totalQuantity+"개";
    
 }
 
