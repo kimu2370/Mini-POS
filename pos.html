@@ -11,41 +11,45 @@
 <!-- 참고 디자인 url -->
 <!-- https://dribbble.com/shots/3715370-BAK-POS-system-App-redesign -->
 <body>
-   <div id="orderContainer">
-      <div id="order">
-         <!-- span 로 컬럼의 제목을 만든다. -->
-         <div id="orderTitle">
-            <span>번호</span>
-            <span>이름</span>
-            <span>가격</span>
-            <span>수량</span>
+   <div id="leftSection">
+      <div id="orderContainer">
+         <div id="order">
+            <!-- span 로 컬럼의 제목을 만든다. -->
+            <div id="orderTitle">
+               <span>번호</span>
+               <span>이름</span>
+               <span>가격</span>
+               <span>수량</span>
+            </div>
+            <!-- 주문 내용 -->
+            <div id="orderContent"></div>
+            <!-- 총 주문 수량 && 총 합계 금액 넣는다. -->
+            <div id="orderTotal">
+               <span>총 금액<p>0</p></span>
+               <span>총 수량<p>0</p></span>
+            </div>
          </div>
-         <!-- 주문 내용 -->
-         <div id="orderContent"></div>
-         <!-- 총 주문 수량 && 총 합계 금액 넣는다. -->
-         <div id="orderTotal">
-            <span>총 금액<p>0</p></span>
-            <span>총 수량<p>0</p></span>
+         <div id="calculator">
+            calculator
+            <!-- Advenced 버튼을 클릭하면 계산기 화면에 출력 -->
          </div>
-      </div>
-      <div id="calculator">
-         calculator
-         <!-- Advenced 버튼을 클릭하면 계산기 화면에 출력 -->
       </div>
    </div>
-   <div id="menuContainer">
-      <div id="menu">
-         <div id="menuCategory">
-            <button class="coffee">커피</button>  
-            <button class="bread">브레드</button> 
-            <button class="pasta">파스타</button>  
-            <button class="alcol">주류</button>  
+   <div id="rightSection">
+      <div id="menuContainer">
+         <div id="menu">
+            <div id="menuCategory">
+               <button class="coffee">커피</button>  
+               <button class="bread">브레드</button> 
+               <button class="pasta">파스타</button>  
+               <button class="alcol">주류</button>  
+            </div>
+            <div id="menuItems"></div>
          </div>
-         <div id="menuItems"></div>
-      </div>
-      <div id="payment">
-         <!-- Advenced -->
-         <button>현금결제</button><button>카드결제</button>
+         <div id="payment">
+            <!-- Advenced -->
+            <button>현금결제</button><button>카드결제</button>
+         </div>
       </div>
    </div>
    <script src="pos.js"></script>

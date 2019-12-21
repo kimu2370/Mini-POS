@@ -93,32 +93,37 @@ button {
 
 #order{height: 450px;}
 
-#menuContainer {
-   /* margin : top right bottom left */
-   margin: 35px 30px 20px 0px;
-   width: 57%;
-   float : right;
+
+
+#orderContainer > * {border: 5px solid slategray;}
+#menuContainer > * {border: 5px solid slategray;} 
+
+#orderContainer,#menuContainer{
+   text-align: center;
 }
 
-#orderContainer {
-   /* margin : top right bottom left */
-   margin: 35px 0px 20px 30px;
-   width: 37%;
-   float : left;
+#leftSection {
+   /* margin: 위 오른쪽 아래 왼쪽 */
+   background-color: #96bdff;
+   margin: 0 10px 0 20px;
+   width: 550px;
 }
-
-body>div > *{border: 5px solid slategray;}
-
-#orderContainer,#menuContainer{border: 5px solid violet;}
+#rightSection {
+   background-color: #96bdff;
+   margin: 0 20px 0 10px;
+   width: 950px;
+}
 
 body {
+   display: flex;
+   align-items: center;
    font-family: "Courier New", Courier, monospace;
    font-weight: bold;
    font-size: 20px;
-   text-align: center;
    box-sizing : border-box;
-   border: 3px solid red;
+   /* border: 3px solid red; */
+   min-height: 100vh;
+   background-color: #6196ff;
    margin: 0;
    padding: 0;
-   min-height: 100vh;
 }
