@@ -1,6 +1,16 @@
 #payment > button {
    width: 180px;
    height: 70px;
+   font-size: 20px;
+   background-color: salmon;
+   margin-right: 20px;
+}
+
+#payment {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center; 
+
 }
 
 #menuItems > button {
@@ -27,13 +37,6 @@
 .pasta{background-color: #F0DBA3;}
 .bread{background-color: #FFBF00}
 .coffee{background-color: #C46210;}
-
-#payment > button {
-   float: right;
-   margin: 30px 20px 30px 10px;
-   font-size: 20px;
-   background-color: salmon;
-}
 
 #menuCategory > button,#menuItems > button {
    font-size: 20px;
@@ -108,11 +111,11 @@ button {
    margin: 10px 3% 10px 1%;
 }
 
-#payment {height: 150px;}
+#payment {height: 100px;}
 
 #menu {height: 500px;}
 
-#calculator {height: 150px;}
+#calculator {height: 100px;}
 
 #order{height: 500px;}
 
@@ -121,7 +124,7 @@ button {
 #orderContainer > * {border: 5px solid slategray;}
 #menuContainer > * {border: 5px solid slategray;} 
 
-#orderContainer,#menuContainer{
+#order,#menu{
    text-align: center;
 }
 
