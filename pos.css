@@ -1,8 +1,8 @@
 #payment > button {
    width: 180px;
    height: 70px;
-   font-size: 20px;
-   background-color: salmon;
+   font-size: 25px;
+   background-color: slategray;
    margin-right: 20px;
 }
 
@@ -55,17 +55,34 @@
    display: flex;
    flex-direction: column;
 }
-
+#calculator>button:hover,
 #payment>button:hover,
 #menuCategory>button:hover,
 #menuItems>button:hover {
    background-color: royalblue;
+}
+button:active {
+   transform: scale(0.94,0.94);
 }
 
 button {
    outline: 0; /* 버튼 바깥 표시 지우기 */
    border: 0;  /* 버튼 바깥 표시 지우기 */
    cursor: pointer;
+}
+
+#calculator button {
+   width: 180px;
+   height: 70px;
+   font-size: 25px;
+   background-color: slategray;
+   margin-right: 20px;
+}
+
+#calculator {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
 }
 
 #orderTotal > span {

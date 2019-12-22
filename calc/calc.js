@@ -12,23 +12,13 @@
    |1  2  3|
    |  0  00|
 */ 
-let data = [];
-let btnArr = ["➕","➖","✖","➗","CLEAR","BACK","7","8","9","4","5","6","1","2","3","0","00"];
-painting();
+let calcArea = document.querySelector('body div:nth-child(1)');
+let buttons = document.querySelectorAll('button');
 
-function painting(){
-   let body = document.body;
-   let div = document.createElement('div');
-   div.innerText = "숫자영역";
-   body.append(div);
-   btnArr.forEach(element=>{
-      let button = document.createElement('button');
-      button.innerText = element;
-      body.append(button);
-   });
+buttons.forEach(button=>button.addEventListener('keydown',inputBtnFn));
+
+function inputBtnFn(e){
+   let key = document.querySelector(`button[data-key="${e.key}"]`);
+   key.at
+   console.log(key);
 }
-
-function writeData(){
-
-}
-
