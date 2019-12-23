@@ -27,3 +27,7 @@ append로 밑에 template으로 새로 생성된다.
 - 각 버튼 사이즈 조절.
 - calc.html 내용 수정
 - 버튼 눌림 효과 적용
+
+12/23 업데이트 내용
+- calc.html 과 calc.css 수정
+- 연산 기능과 clear,= 기능 완성

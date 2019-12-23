@@ -26,7 +26,7 @@ calcBtn.addEventListener('click',calculatorFn);
 function calculatorFn(){
 /* calculator 버튼을 클릭하면 새창을 띄워서 계산기를 랜더링한다.
          -> 현금 결제할 때 필요할 것 같다..*/
-   window.open('calc/calc.html','calculator','width=400,height=400,left=500,top=200');
+   window.open('calc/calc.html','calculator','width=500,height=500,left=500,top=200');
 }
 
 
