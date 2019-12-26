@@ -1,8 +1,8 @@
-let step = 0;
-let first = '';
-let operator = '';
-let second = '';
-let output = '';
+let step = 0;        //연산 기호 사용 유무
+let first = '';      //첫번째 숫자
+let operator = '';   //연산 기호
+let second = '';     //두번째 숫자
+let output = '';     //출력
 
 let input = document.querySelector('input');
 let grayBtn = document.querySelectorAll('.gray');
@@ -15,7 +15,7 @@ blueBtn.forEach(node=>(node.addEventListener('click',clickBlueBtn)));
 clearBtn.addEventListener('click',clickClearBtn);
 resultBtn.addEventListener('click',clickResultBtn);
 
-
+// gray 버튼(숫자) 함수
 function clickGrayBtn(event){
    if(step===0){
       first = Number(first + event.target.innerText);
@@ -28,6 +28,7 @@ function clickGrayBtn(event){
    input.value=output;
 }
 
+//blue 버튼(연산 기호) 함수
 function clickBlueBtn(event){
    step = 1;
    operator = event.target.innerText;
@@ -35,6 +36,7 @@ function clickBlueBtn(event){
    input.value=output;
 }
 
+//clear 버튼 함수
 function clickClearBtn() {
    step = 0;
    first = '';
@@ -44,6 +46,7 @@ function clickClearBtn() {
    input.value = 0;
 }
 
+//출력(=) 버튼 함수
 function clickResultBtn(){
    if(operator==='+'){
       input.value=first + second;

@@ -158,6 +158,10 @@ button {
    width: 60%;
 }
 
+::selection {
+   background-color: #fb88ad;
+}
+
 body {
    display: flex;
    align-items: center;
